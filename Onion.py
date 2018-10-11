@@ -1,7 +1,7 @@
 import requests
 
 
-class Onion(requests):
+class Onion:
 
     _proxies = {
         'http': 'socks5h://127.0.0.1:9050',
