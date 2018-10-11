@@ -34,4 +34,4 @@ class Onion(requests):
 
     def delete(url, **kwargs):
         kwargs.update({'proxies': Onion._proxies})
-        return requests.deletee(url, **kwargs)
+        return requests.delete(url, **kwargs)
