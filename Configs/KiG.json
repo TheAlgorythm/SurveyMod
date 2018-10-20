@@ -1,0 +1,23 @@
+{
+    "url": "https://odm533.activehosted.com/proc.php",
+    "method": "post",
+
+    "interval_min": 150,
+    "interval_max": 500,
+
+    "data": {
+        "field[12]": "NEIN",
+        "field[11]": "NEIN",
+        "field[13]": "NEIN",
+        "field[16]": ["Herr", "Frau", "Non-Binary"],
+        "field[5]": ["Deutschland", "Österreich", "Schweiz"],
+        "firstname": "%first_name%",
+        "lastname": "%last_name%",
+        "email": "%email%",
+        "field[1]": "%street%",
+        "field[2]": "%house_number%",
+        "field[3]": "%zip%",
+        "field[4]": "%town%",
+        "field[28][]": "Ja, die DVCK e.V. darf mich per E-Mail, Brief oder Telefon über ihre Aktionen etc informieren. Die Datenschutzhinweise (unten auf dieser Seite) habe ich zur Kenntnis genommen."
+    }
+}

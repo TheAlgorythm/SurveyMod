@@ -1,0 +1,7 @@
+{
+    "first_name": ["Stefan", "Stefanie"],
+    "last_name": ["Müller", "Maier"],
+    "email": ["%first_name%.%last_name%%rands%", "%last_name%-%first_name%"],
+    "street": ["Gender Str."],
+    "town": ["Karl-Marx-Stadt"]
+}
