@@ -28,7 +28,8 @@ class ui_SurveyMod:
         self.hlayout2.addWidget(self.helperConfigLine)
         self.hlayout2.addWidget(self.helperConfigButton)
 
-        self.iterationsConfigLine = QtWidgets.QLineEdit()
+        self.iterationsConfigLine = QtWidgets.QSpinBox()
+        self.iterationsConfigLine.setRange(1, 9999999)
 
         self.formlayout.addRow('Site Config', self.hlayout1)
         self.formlayout.addRow('Helper Config', self.hlayout2)
@@ -36,7 +37,7 @@ class ui_SurveyMod:
 
         self.log = QtWidgets.QPlainTextEdit()
         self.log.setReadOnly(True)
-        self.mails = QtWidgets.QPlainTextEdit()
+        self.mails = QtWidgets.QTextBrowser()
         self.runButton = QtWidgets.QPushButton('Run')
 
         self.layout.addLayout(self.formlayout)

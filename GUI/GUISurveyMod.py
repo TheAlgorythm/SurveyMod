@@ -20,10 +20,7 @@ class GUISurveyMod(QMainWindow):
     def run(self):
         siteConfig = self.ui.siteConfigLine.text()
         helperConfig = self.ui.helperConfigLine.text()
-        try:
-            iterations = int(self.ui.iterationsConfigLine.text())
-        except ValueError:
-            return
+        iterations = self.ui.iterationsConfigLine.value()
         if not siteConfig or not helperConfig or iterations <= 0:
             return
         with open(siteConfig) as site_config_file:
